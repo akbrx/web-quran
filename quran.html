@@ -47,6 +47,16 @@
       align-items: center;
       justify-content: center;
     }
+    #text-arabic {
+      height: 85vh;
+      color:#ffffff;
+      overflow-y: auto;
+    }
+    #daftar-surah {
+      overflow-y: auto;
+      color:#ffffff;
+      height: 85vh;
+    }
   </style>
 </head>
 <body>
@@ -59,11 +69,13 @@
     <div class="container-fluid p-4">
       <div class="row">
         <div class="col-md-4 mb-4">
-          <div class="list-group shadow p-3 bg-dark-custom rounded" id="daftar-surah"></div>
+          <div class="list-group shadow p-3 bg-dark-custom rounded" id="daftar-surah">
+            <p class="text-center">Silakan klik daftar surah</p>
+          </div>
         </div>
         <div class="col-md-8">
           <div class="shadow p-4 bg-dark-custom rounded" id="text-arabic">
-            <p class="text-center">Silakan klik daftar surah</p>
+            
           </div>
         </div>
       </div>
@@ -109,6 +121,10 @@
                                     <div class="list-group shadow-sm fs-3 text-end amiri bg-dark-custom text-light-custom ayah-text">
                                       ${ayah.teksArab}
                                     </div>
+                                    <div class="list-group shadow-sm fs-3 text-end amiri bg-dark-custom text-light-custom ayah-text">
+                                      ${ayah.teksLatin}
+                                    </div>
+                                    <br>
                                     <div class="list-group shadow-sm fs-5 text-end amiri bg-dark-custom text-light-custom">
                                       ${ayah.teksIndonesia}
                                     </div>
